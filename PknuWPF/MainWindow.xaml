@@ -1,0 +1,19 @@
+﻿<Window x:Class="PknuWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PknuWPF"
+        mc:Ignorable="d"
+        Title="Sample Window" Height="450" Width="800">
+    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" >
+        <TextBlock TextWrapping="Wrap" Text="Test Block" Height="40"
+                   Margin="10,25" />
+        <TextBox x:Name="TxtNames" Height="22" TextWrapping="Wrap" Text="TextBox"/>
+        <ProgressBar Height="30" Margin="10" Value="50" Maximum="100"/>
+        <Slider Height="40" Margin="10"/>
+        <PasswordBox x:Name="PgbTest" PasswordChar="*" Password="Test" Height="30" Margin="10"/>
+
+
+    </StackPanel>
+</Window>

@@ -1,0 +1,119 @@
+﻿<Page x:Class="BikeShopApp.TestPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BikeShopApp"
+      xmlns:bl="clr-namespace:BusinessLogic"
+      xmlns:m="clr-namespace:BikeShopApp.math"
+      mc:Ignorable="d" 
+      d:DesignHeight="380" d:DesignWidth="800"
+      Title="TestPage">
+    <Page.Resources>
+        <m:TwiceConverter x:Key="twiceConv"/>
+    </Page.Resources>
+    <Grid Loaded="Grid_Loaded">
+        <!--<Label>
+            <bl:Car x:Name="car1" Speed="100" Color="Aqua" >
+                <bl:Car.Diriver>
+                    <bl:Human Name="Kim" HasDrivingLicense="True"/>
+                </bl:Car.Diriver>
+            </bl:Car>
+        </Label>-->
+        <!--<Grid Width="50" Height="50" Background="Orange">
+            <Button Content="Hello World" Margin="10"/>
+        </Grid>-->
+        <!--<StackPanel Background="Orange" Margin="30" Orientation="Horizontal" >
+            <Button Content="Button A" Height="30" />
+            <Button Canvas.Left="20" Canvas.Bottom="20" Content="Button B"/>
+            <Button Canvas.Left="86" Canvas.Top="21" Content="Button C" />
+
+        </StackPanel>-->
+
+        <!--<DockPanel Background="Orange" Margin="30"  >
+            <Button Content="Button A" DockPanel.Dock="Left"/>
+            <Button Content="Button B" DockPanel.Dock="Right"/>
+            <Button Content="Button C" DockPanel.Dock="Top"/>
+            <Button Content="Button D" DockPanel.Dock="Bottom"/>
+            <Button Content="Button E"/>
+            
+
+        </DockPanel>-->
+
+        <!--<Grid Width="500" Height="200" Margin="100,5,100,100">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Row="0" Grid.Column="0" Content="Button A" Margin="5" />
+            <Button Grid.Row="0" Grid.Column="1" Content="Button B" Margin="5" />
+            <Button Grid.Row="1" Grid.Column="0" Content="Button C" Margin="5" />
+            <Button Grid.Row="1" Grid.Column="1" Content="Button D" Margin="5" />
+            
+        </Grid>-->
+
+        <!--<Grid Height="100">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80"/>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+
+        </Grid>-->
+
+        <Grid Width="320" Height="200">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <ListBox x:Name="LstCar"  Grid.Column="0" ItemsSource="{Binding}">
+                <!--<Label Content="Element1"/>
+                <Label Content="Element2"/>
+                <TextBlock Text="Element3"/>
+                <GroupBox Header="Element4">
+                    This is a subsentence
+                </GroupBox>-->
+                
+            </ListBox>
+
+            <ComboBox Grid.Column="1" Height="20" VerticalAlignment="Top">
+                <Label Content="Element1"/>
+                <Label Content="Element2"/>
+                <TextBlock Text="Element3"/>
+                <GroupBox Header="Element4">
+                    This is a subsentence
+                </GroupBox>
+            </ComboBox>
+        </Grid>
+        <!--<StackPanel Margin="10">
+            <Slider x:Name="slider" Value="10" Minimum="0" Maximum="100"/>
+            <ProgressBar Height="30" Value="{Binding Value, ElementName=slider}"
+                         Margin="5"/>
+            <TextBlock TextAlignment="Center" 
+                       Text="{Binding Value,ElementName=slider,StringFormat='{}{0:#,#.#}'}"/>
+            <TextBlock Text="{Binding Driver.Name}" Height="30" TextAlignment="Center"
+                       FontSize="20"/>
+            <TextBox Text="{Binding Speed, Mode=TwoWay, Converter={StaticResource twiceConv}}" 
+                     FontSize="20" Width="100"/>
+            <TextBlock Text="{Binding Speed, Mode=OneTime}" FontSize="20"/>
+        </StackPanel>-->
+                
+        
+        
+        
+        </Grid>
+</Page>
