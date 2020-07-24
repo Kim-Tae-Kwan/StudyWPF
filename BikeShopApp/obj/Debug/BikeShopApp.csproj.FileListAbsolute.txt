@@ -22,3 +22,6 @@ C:\Users\PKNU\Desktop\IOT\StudyWPF\BikeShopApp\obj\Debug\Menu.baml
 C:\Users\PKNU\Desktop\IOT\StudyWPF\BikeShopApp\obj\Debug\Discussion.g.cs
 C:\Users\PKNU\Desktop\IOT\StudyWPF\BikeShopApp\obj\Debug\Discussion.baml
 C:\Users\PKNU\Desktop\IOT\StudyWPF\BikeShopApp\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\PKNU\Desktop\IOT\StudyWPF\BikeShopApp\obj\Debug\ProductManagement.g.cs
+C:\Users\PKNU\Desktop\IOT\StudyWPF\BikeShopApp\obj\Debug\ProductManagement.baml
+C:\Users\PKNU\Desktop\IOT\StudyWPF\BikeShopApp\obj\Debug\App.baml

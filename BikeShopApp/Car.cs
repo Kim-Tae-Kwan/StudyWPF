@@ -2,10 +2,36 @@
 
 namespace BusinessLogic
 {
-    public class Car
+    public class Car : Notifier
     {
-        public double Speed { get; set; }
-        public Color Color { get; set; }
+
+        private double speed;
+
+        public double Speed
+        {
+            get => speed;
+            set
+            {
+                speed = value;
+                OnPropertyChanged("speed");
+            }
+        }
+
+        private Color color;
+
+        public Color Color 
+        { 
+            get
+            {
+                return color;
+            }
+            set
+            {
+                color = value;
+                OnPropertyChanged("Color");
+            }
+        }
+
         public Human Driver { get; set; }
     }
 
