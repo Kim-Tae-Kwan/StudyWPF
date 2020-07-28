@@ -1,0 +1,21 @@
+2020-07-28 수업
+
+1.단위테스트
+  StudyWPF\CalculatorApp.Test
+  StudyWPF\CalculatorApp
+
+2.MVVM Framework(Caliburn.Micro)
+ 
+ - StartCaliburnApp 프로젝트 생성
+ - Caliburn.Micro 다운 (NuGet 패키지 관리)
+ - WPF_MVVM_APP 과 비교하기 위해 프로젝트 추가 (기존 프로젝트 추가)
+ - App.Xaml => StartURI 삭제
+ - App.xaml.cs => public App() 생성
+ - Bootstrapper.cs 생성 => BootstrapperBase 상속
+ - ShellViewModel.cs 생성 => PropertyChangedBase 상속
+ - 1. MainWindow.xaml -->Views 폴더로 이동 후 ShellView.xaml로 이름 변경
+   2. ShellView.xaml의 x:Class="StartCaliburnApp.Views.MainWindow" 변경
+   3. ShellView.xaml.cs의 namespace StartCaliburnApp(.Views 추가), class 이름 --> ShellView로 변경
+ 
+ 
+

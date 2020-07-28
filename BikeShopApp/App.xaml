@@ -12,19 +12,19 @@
             <sys:Double x:Key="Pknu_Width">1280</sys:Double>
             <sys:Double x:Key="Pknu_Height">720</sys:Double>
             <sys:String x:Key="Pknu_Title">PKNU Bike Shop</sys:String>
-            
+
             <LinearGradientBrush x:Key="Page_Background">
                 <GradientStop Color="White" Offset="0.1"/>
                 <GradientStop Color="Red" Offset="0.45"/>
                 <GradientStop Color="Blue" Offset="0.5"/>
                 <GradientStop Color="White" Offset="0.9"/>
-            </LinearGradientBrush
-                                 
+            </LinearGradientBrush>
+
             <LinearGradientBrush x:Key="Label_Background">
-            <GradientStop Color="White" Offset="0.1"/>
-            <GradientStop Color="Red" Offset="0.5"/>
-            <GradientStop Color="Blue" Offset="0.45"/>
-            <GradientStop Color="White" Offset="0.9"/>
+                <GradientStop Color="White" Offset="0.1"/>
+                <GradientStop Color="Red" Offset="0.5"/>
+                <GradientStop Color="Blue" Offset="0.45"/>
+                <GradientStop Color="White" Offset="0.9"/>
             </LinearGradientBrush>
 
             <Style x:Key="niceButton" TargetType="Button">

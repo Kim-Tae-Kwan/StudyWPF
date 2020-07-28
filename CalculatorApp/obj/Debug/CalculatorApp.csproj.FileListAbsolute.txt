@@ -1,0 +1,7 @@
+C:\Users\PKNU\Desktop\IOT\StudyWPF\CalculatorApp\bin\Debug\CalculatorApp.exe.config
+C:\Users\PKNU\Desktop\IOT\StudyWPF\CalculatorApp\bin\Debug\CalculatorApp.exe
+C:\Users\PKNU\Desktop\IOT\StudyWPF\CalculatorApp\bin\Debug\CalculatorApp.pdb
+C:\Users\PKNU\Desktop\IOT\StudyWPF\CalculatorApp\obj\Debug\CalculatorApp.csprojAssemblyReference.cache
+C:\Users\PKNU\Desktop\IOT\StudyWPF\CalculatorApp\obj\Debug\CalculatorApp.csproj.CoreCompileInputs.cache
+C:\Users\PKNU\Desktop\IOT\StudyWPF\CalculatorApp\obj\Debug\CalculatorApp.exe
+C:\Users\PKNU\Desktop\IOT\StudyWPF\CalculatorApp\obj\Debug\CalculatorApp.pdb
