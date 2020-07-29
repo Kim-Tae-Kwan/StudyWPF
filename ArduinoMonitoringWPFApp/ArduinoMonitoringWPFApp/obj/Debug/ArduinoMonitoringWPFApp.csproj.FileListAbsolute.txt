@@ -28,6 +28,3 @@ C:\Users\vodja\OneDrive\바탕 화면\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMo
 C:\Users\vodja\OneDrive\바탕 화면\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\bin\Debug\System.Reactive.dll
 C:\Users\vodja\OneDrive\바탕 화면\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\bin\Debug\Microsoft.Maps.MapControl.WPF.xml
 C:\Users\vodja\OneDrive\바탕 화면\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\bin\Debug\System.Reactive.xml
-C:\Users\vodja\OneDrive\바탕 화면\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\bin\Debug\Syncfusion.Licensing.dll
-C:\Users\vodja\OneDrive\바탕 화면\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\bin\Debug\Syncfusion.SfChart.WPF.dll
-C:\Users\vodja\OneDrive\바탕 화면\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\bin\Debug\Syncfusion.SfChart.WPF.xml
