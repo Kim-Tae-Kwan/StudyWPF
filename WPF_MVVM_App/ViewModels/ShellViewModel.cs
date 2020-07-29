@@ -154,6 +154,7 @@ namespace WPF_MVVM_App.ViewModels
                 (!string.IsNullOrEmpty(InEmail)) &&
                 (!string.IsNullOrEmpty(InDate.ToString()));
         }
+        
 
         private void Click()
         {

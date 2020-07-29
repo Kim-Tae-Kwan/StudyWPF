@@ -1,0 +1,5 @@
+WPF 차트
+
+1. interactiveDataDisplay 설치
+2. xmlns:d3="clr-namespace:InteractiveDataDisplay.WPF;assembly=InteractiveDataDisplay.WPF" 추가
+3. 
