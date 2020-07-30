@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
-        xmlns:winformchart="clr-namespace:System.Windows.Forms.DataVisualization.Charting;assembly=System.Windows.Forms.DataVisualization"
+        xmlns:d3="clr-namespace:InteractiveDataDisplay.WPF;assembly=InteractiveDataDisplay.WPF"
         xmlns:local="clr-namespace:ArduinoMonitoringWPFApp"
         mc:Ignorable="d"
         Title="Arduino Monitoring" Height="700" Width="600" >
@@ -25,16 +25,41 @@
 
         <Menu Grid.Row="0" Grid.ColumnSpan="4" Margin="3">
             <MenuItem Header="파일">
-                <MenuItem Header="열기"/>
-                <MenuItem Header="저장"/>
-                <MenuItem Header="끝내기" Click="MenuItem_Click"/>
+                <MenuItem Header="열기" >
+                    <MenuItem.Icon>
+                        <Image Source="Images\iconfinder_Open_1493293.png" Width="30" Height="30"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="저장">
+                    <MenuItem.Icon>
+                        <Image Source="Images\iconfinder_document-save_118916.png" Width="30" Height="30"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <Separator/>
+                <MenuItem Header="끝내기" Click="MenuItem_Click">
+                    <MenuItem.Icon>
+                        <Image Source="Images\shutdown.png" Width="30" Height="20"/>
+                    </MenuItem.Icon>
+                </MenuItem>
             </MenuItem>
             <MenuItem Header="시뮬레이션">
-                <MenuItem Header="시작" Click="MenuItemStart_Click"/>
-                <MenuItem Header="중지" Click="MenuItemStop_Click"/>
+                <MenuItem Header="시작" Click="MenuItemStart_Click">
+                    <MenuItem.Icon>
+                        <Image Source="Images\start.png" Width="30" Height="15"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="중지" Click="MenuItemStop_Click">
+                    <MenuItem.Icon>
+                        <Image Source="Images\stop.png" Width="30" Height="17"/>
+                    </MenuItem.Icon>
+                </MenuItem>
             </MenuItem>
             <MenuItem Header="도움말">
-                <MenuItem Header="정보" />
+                <MenuItem Header="정보" Click="MenuItem_Click_1" >
+                    <MenuItem.Icon>
+                        <Image Source="Images\information.png" Width="30" Height="20"/>
+                    </MenuItem.Icon>
+                </MenuItem>
             </MenuItem>
         </Menu>
         <TextBlock x:Name="ConnTime" Text="연결시간 :" Margin="5" 
@@ -42,10 +67,11 @@
                    FontSize="15" HorizontalAlignment="Left" 
                    VerticalAlignment="Center" />
        
-        <TextBox x:Name="TxtSensorCount" Grid.Row="1" Grid.Column="2" Text="value"
+        <TextBox x:Name="TxtSensorCount" Grid.Row="1" Grid.Column="2" 
                  Margin="2" Height="25" Width="50"
                  HorizontalAlignment="Center" />
-        <GroupBox Grid.Row="2" Grid.ColumnSpan="3" Margin="5"
+        
+        <GroupBox Grid.Row="2" Grid.ColumnSpan="3" Margin="5" 
                   Header="포토레지스터" >
             <StackPanel>
                 <ProgressBar x:Name="PgbPhotoRegistor" Height="30" Margin="5"/>
@@ -73,11 +99,10 @@
                         FontSize="30"/>
             </Grid>
         </GroupBox>
-        <WindowsFormsHost Name="chart" Grid.Row="5" Grid.ColumnSpan="4" Margin="10"
-                        Background="White"  >
-            
-        </WindowsFormsHost>
-
-
+        <d3:Chart Grid.Row="5" Grid.ColumnSpan="4" Margin="15" Background="DarkBlue" 
+                  >
+            <d3:LineGraph x:Name="linegraph" Description="Photo Value" Stroke="Green" 
+                          StrokeThickness="3" ScrollViewer.HorizontalScrollBarVisibility="Visible"/>
+        </d3:Chart>
     </Grid>
 </mah:MetroWindow>

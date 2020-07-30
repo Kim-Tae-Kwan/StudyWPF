@@ -1,11 +1,12 @@
-﻿using MahApps.Metro.Controls;
+﻿using ArduinoMonitoringWPFApp.Base;
+using MahApps.Metro.Controls;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.IO.Ports;
 using System.Windows;
 using System.Windows.Forms;
-using System.Windows.Forms.DataVisualization.Charting;
-
+using ArduinoMonitoringWPFApp.ViewInfo;
 
 namespace ArduinoMonitoringWPFApp
 {
@@ -17,9 +18,15 @@ namespace ArduinoMonitoringWPFApp
     {
         SerialPort serial;
 
+        string strConnString = "Data Source=localhost;Port=3306;Database=iot_sensordata;uid=root;password=mysql_p@ssw0rd";
+
         private short xCount = 200;
         private short maxPhotoVal = 1023;
         private int time = 0;
+
+        List<int> Time = new List<int>(); //x
+        List<int> vs = new List<int>();  //y
+
         List<SensorData> photoDatas = new List<SensorData>();
         public bool IsSimulation { get; set; }
 
@@ -29,38 +36,7 @@ namespace ArduinoMonitoringWPFApp
         {
             InitializeComponent();
             InitialControls();
-            graphInit();
         }
-        private void graphInit() 
-        {
-            Chart chartView = new Chart(); 
-            Title title = new System.Windows.Forms.DataVisualization.Charting.Title(); 
-            title.Text = "photo value"; 
-            chartView.Titles.Add(title); 
-
-            ChartArea chartArea = new ChartArea(); 
-            chartArea.Name = "Safety"; 
-            chartArea.AxisX.IntervalAutoMode = IntervalAutoMode.FixedCount; 
-            chartArea.AxisX.Interval = 1;
-            chartArea.AxisX.MajorGrid.Enabled = false;
-            chartArea.AxisY.Maximum = 100;
-            chartView.ChartAreas.Add(chartArea); Series series = new Series(); 
-            series.ChartArea = "Safety"; 
-            series.BackGradientStyle = GradientStyle.TopBottom; 
-            series.ChartType = SeriesChartType.Column; 
-            series.XValueType = ChartValueType.String;
-            series.IsValueShownAsLabel = true; 
-            chartView.Series.Add(series); Legend legend = new Legend(); 
-            legend.Enabled = false;
-            chartView.Legends.Add(legend);
-
-            chart.Child = chartView;
-
-            
-        }
-
-        
-
 
         private void InitialControls()
         {
@@ -95,6 +71,7 @@ namespace ArduinoMonitoringWPFApp
         private void DisplayValue(string sVal)
         {
             
+
             try
             {
                 ushort v = ushort.Parse(sVal);
@@ -114,18 +91,11 @@ namespace ArduinoMonitoringWPFApp
                 RtbLog.AppendText($"{item}\n");
                 RtbLog.ScrollToEnd();
 
+                vs.Add(v);
+                Time.Add(time);
 
-                //ChtSensorValues.Series[0].Points.Add(v);
-
-                //ChtSensorValues.ChartAreas[0].AxisX.Minimum = 0;
-                //ChtSensorValues.ChartAreas[0].AxisX.Maximum =
-                //    (photoDatas.Count >= xCount) ? photoDatas.Count : xCount;
-
-                //if (photoDatas.Count > xCount)
-                //    ChtSensorValues.ChartAreas[0].AxisX.ScaleView.Zoom(
-                //        photoDatas.Count - xCount, photoDatas.Count);
-                //else
-                //    ChtSensorValues.ChartAreas[0].AxisX.ScaleView.Zoom(0, xCount);
+                linegraph.PlotY(vs);
+                
 
                 if (IsSimulation == false)
                     BtnPortValue.Content = $"{serial.PortName}\n{sVal}";
@@ -136,6 +106,31 @@ namespace ArduinoMonitoringWPFApp
             {
                 RtbLog.AppendText($"Error : {ex.Message}\n");
                 RtbLog.ScrollToEnd();
+            }
+        }
+
+        private void InsertDataToDB(SensorData data)
+        {
+            string strQuery = "INSERT INTO sensordatatbl " +
+                " (Date, Value) " +
+                " VALUES " +
+                " (@Date, @Value) ";
+
+            using (MySqlConnection conn = new MySqlConnection(strConnString))
+            {
+                conn.Open();
+                MySqlCommand cmd = new MySqlCommand(strQuery, conn);
+                MySqlParameter paramDate = new MySqlParameter("@Date", MySqlDbType.DateTime)
+                {
+                    Value = data.Date
+                };
+                cmd.Parameters.Add(paramDate);
+                MySqlParameter paramValue = new MySqlParameter("@Value", MySqlDbType.Int32)
+                {
+                    Value = data.Value
+                };
+                cmd.Parameters.Add(paramValue);
+                cmd.ExecuteNonQuery();
             }
         }
 
@@ -174,7 +169,6 @@ namespace ArduinoMonitoringWPFApp
             timer.Interval = 1000;
             timer.Tick += Timer_Tick;
             timer.Start();
-
             // serial통신 끊기
             BtnDisconnect_Click(sender, e);
         }
@@ -194,6 +188,12 @@ namespace ArduinoMonitoringWPFApp
 
             // serial 통신 재시작
             BtnConnect_Click(sender, e);
+        }
+
+        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
+        {
+            ViewInfo.InformationWindow informationWindow = new InformationWindow();
+            informationWindow.ShowDialog();
         }
     }
 }
