@@ -5,14 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
         xmlns:d3="clr-namespace:InteractiveDataDisplay.WPF;assembly=InteractiveDataDisplay.WPF"
+        xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:ArduinoMonitoringWPFApp"
         mc:Ignorable="d"
-        Title="Arduino Monitoring" Height="700" Width="600" >
+        Title="Arduino Monitoring" Height="700" Width="600" 
+        >
+    <mah:MetroWindow.IconTemplate>
+        <DataTemplate>
+            <iconPacks:PackIconSimpleIcons Kind="Arduino" HorizontalAlignment="Center" VerticalAlignment="Center"
+                                           Foreground="White"/>
+        </DataTemplate>
+    </mah:MetroWindow.IconTemplate>
+    
     <Grid Margin="5">
         <Grid.RowDefinitions>
             <RowDefinition Height="0.8*"/>
             <RowDefinition Height="1*"/>
-            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2.5*"/>
             <RowDefinition Height="3*"/>
             <RowDefinition Height="6*"/>
         </Grid.RowDefinitions>
@@ -66,23 +76,29 @@
                    Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
                    FontSize="15" HorizontalAlignment="Left" 
                    VerticalAlignment="Center" />
-       
+
         <TextBox x:Name="TxtSensorCount" Grid.Row="1" Grid.Column="2" 
                  Margin="2" Height="25" Width="50"
-                 HorizontalAlignment="Center" />
-        
-        <GroupBox Grid.Row="2" Grid.ColumnSpan="3" Margin="5" 
-                  Header="포토레지스터" >
+                 HorizontalAlignment="Center" IsReadOnly="True" />
+
+        <GroupBox x:Name="GroupBox" Grid.Row="2" Grid.ColumnSpan="3" Margin="5" >
+            <GroupBox.Header>
+                <TextBlock Text="포토 레지스터" Foreground="White" FontSize="15"/>
+            </GroupBox.Header>
             <StackPanel>
-                <ProgressBar x:Name="PgbPhotoRegistor" Height="30" Margin="5"/>
-                <TextBlock x:Name="LblPhotoRegistor" Text="value" HorizontalAlignment="Center"/>
+                <ProgressBar x:Name="PgbPhotoRegistor" Height="30" Margin="5" />
+                <TextBox x:Name="LblPhotoRegistor"  HorizontalAlignment="Center"/>
             </StackPanel>
         </GroupBox>
         <TextBox x:Name="RtbLog" Grid.Row="3" Grid.ColumnSpan="3" Margin="5"
-                 Background="WhiteSmoke" />
+                 Background="WhiteSmoke"  
+                 IsReadOnly="True" ScrollViewer.CanContentScroll="True"/>
 
         <GroupBox Grid.Row="1" Grid.Column="4" Grid.RowSpan="3" 
-                  Margin="5" Header="포트">
+                  Margin="5" Style="{StaticResource MaterialDesignGroupBox}" >
+            <GroupBox.Header>
+                <TextBlock Text="포트" Foreground="White" FontSize="15"/>
+            </GroupBox.Header>
             <Grid Margin="5">
                 <Grid.RowDefinitions>
                     <RowDefinition/>
@@ -90,16 +106,19 @@
                     <RowDefinition/>
                     <RowDefinition Height="2*"/>
                 </Grid.RowDefinitions>
-                <ComboBox x:Name="CboSerialPort" Grid.Row="0" Margin="5" SelectionChanged="CboSerialPort_SelectionChanged"/>
+                <ComboBox x:Name="CboSerialPort" Grid.Row="0" Margin="5" SelectionChanged="CboSerialPort_SelectionChanged" 
+                          />
+
                 <Button x:Name="BtnConnect" Grid.Row="1" Margin="5" Content="CONNECT"
-                        FontSize="20" Click="BtnConnect_Click"/>
+                        FontSize="20" Click="BtnConnect_Click" Foreground="White"/>
                 <Button x:Name="BtnDisconnect" Grid.Row="2" Margin="5" Content="DISCONNECT"
-                        FontSize="20" Click="BtnDisconnect_Click"/>
+                        FontSize="20" Click="BtnDisconnect_Click" Foreground="White"/>
                 <Button x:Name="BtnPortValue" Grid.Row="3" Margin="5" Content="Port"
-                        FontSize="30"/>
+                        FontSize="30" Height="90" Foreground="White"/>
             </Grid>
         </GroupBox>
-        <d3:Chart Grid.Row="5" Grid.ColumnSpan="4" Margin="15" Background="DarkBlue" 
+
+        <d3:Chart Grid.Row="5" Grid.ColumnSpan="4" Margin="15" Background="WhiteSmoke"  
                   >
             <d3:LineGraph x:Name="linegraph" Description="Photo Value" Stroke="Green" 
                           StrokeThickness="3" ScrollViewer.HorizontalScrollBarVisibility="Visible"/>

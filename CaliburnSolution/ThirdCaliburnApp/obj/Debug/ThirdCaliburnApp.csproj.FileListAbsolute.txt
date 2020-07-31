@@ -126,3 +126,7 @@ C:\Users\PKNU\Desktop\IOT\StudyWPF\CaliburnSolution\ThirdCaliburnApp\bin\Debug\M
 C:\Users\PKNU\Desktop\IOT\StudyWPF\CaliburnSolution\ThirdCaliburnApp\bin\Debug\MahApps.Metro.IconPacks.WeatherIcons.xml
 C:\Users\PKNU\Desktop\IOT\StudyWPF\CaliburnSolution\ThirdCaliburnApp\bin\Debug\MahApps.Metro.IconPacks.Zondicons.pdb
 C:\Users\PKNU\Desktop\IOT\StudyWPF\CaliburnSolution\ThirdCaliburnApp\bin\Debug\MahApps.Metro.IconPacks.Zondicons.xml
+C:\Users\PKNU\Desktop\IOT\StudyWPF\CaliburnSolution\ThirdCaliburnApp\bin\Debug\MvvmDialogs.dll
+C:\Users\PKNU\Desktop\IOT\StudyWPF\CaliburnSolution\ThirdCaliburnApp\bin\Debug\MvvmDialogs.xml
+C:\Users\PKNU\Desktop\IOT\StudyWPF\CaliburnSolution\ThirdCaliburnApp\obj\Debug\Views\DialogView.g.cs
+C:\Users\PKNU\Desktop\IOT\StudyWPF\CaliburnSolution\ThirdCaliburnApp\obj\Debug\Views\DialogView.baml

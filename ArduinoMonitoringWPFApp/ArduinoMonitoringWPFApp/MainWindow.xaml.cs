@@ -50,7 +50,7 @@ namespace ArduinoMonitoringWPFApp
             PgbPhotoRegistor.Minimum = 0;
             PgbPhotoRegistor.Maximum = maxPhotoVal;
 
-            BtnConnect.IsEnabled = BtnDisconnect.IsEnabled = false;
+             BtnDisconnect.IsEnabled = false;
         }
 
         private void CboSerialPort_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
@@ -80,7 +80,6 @@ namespace ArduinoMonitoringWPFApp
 
                 SensorData data = new SensorData(DateTime.Now, v);
                 photoDatas.Add(data);
-                //InsertDataToDB(data);
                 TxtSensorCount.Text = photoDatas.Count.ToString();
                 PgbPhotoRegistor.Value = v;
                 LblPhotoRegistor.Text = v.ToString();
@@ -90,17 +89,24 @@ namespace ArduinoMonitoringWPFApp
                
                 RtbLog.AppendText($"{item}\n");
                 RtbLog.ScrollToEnd();
+                
+
 
                 vs.Add(v);
                 Time.Add(time);
 
                 linegraph.PlotY(vs);
-                
+
 
                 if (IsSimulation == false)
+                {
                     BtnPortValue.Content = $"{serial.PortName}\n{sVal}";
+                    InsertDataToDB(data);
+                }
                 else
                     BtnPortValue.Content = $"{sVal}";
+                    
+
             }
             catch (Exception ex)
             {
@@ -138,6 +144,9 @@ namespace ArduinoMonitoringWPFApp
         {
             if (IsSimulation == true)
                 System.Windows.Forms.MessageBox.Show("시뮬레이션을 중지 하세요.","알림",MessageBoxButtons.OK,MessageBoxIcon.Information);
+
+            if (serial == null)
+                System.Windows.Forms.MessageBox.Show("포트를 선택하세요.", "알림", MessageBoxButtons.OK, MessageBoxIcon.Information);
             if (serial!=null && IsSimulation==false)
             {
                 serial.Open();
@@ -187,7 +196,7 @@ namespace ArduinoMonitoringWPFApp
             IsSimulation = false;
 
             // serial 통신 재시작
-            BtnConnect_Click(sender, e);
+            //BtnConnect_Click(sender, e);
         }
 
         private void MenuItem_Click_1(object sender, RoutedEventArgs e)
