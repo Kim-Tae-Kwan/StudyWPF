@@ -28,7 +28,6 @@ C:\Users\vodja\OneDrive\바탕 화면\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMo
 C:\Users\vodja\OneDrive\바탕 화면\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\bin\Debug\System.Reactive.dll
 C:\Users\vodja\OneDrive\바탕 화면\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\bin\Debug\Microsoft.Maps.MapControl.WPF.xml
 C:\Users\vodja\OneDrive\바탕 화면\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\bin\Debug\System.Reactive.xml
-C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\obj\Debug\MainWindow.g.cs
 C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\obj\Debug\App.g.cs
 C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\obj\Debug\ArduinoMonitoringWPFApp_MarkupCompile.cache
 C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\obj\Debug\ArduinoMonitoringWPFApp_MarkupCompile.lref
@@ -51,7 +50,6 @@ C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFA
 C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\bin\Debug\Microsoft.Xaml.Behaviors.xml
 C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\bin\Debug\System.Reactive.xml
 C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\obj\Debug\App.baml
-C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\obj\Debug\MainWindow.baml
 C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\obj\Debug\ArduinoMonitoringWPFApp.g.resources
 C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\obj\Debug\ArduinoMonitoringWPFApp.Properties.Resources.resources
 C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\obj\Debug\ArduinoMonitoringWPFApp.csproj.GenerateResource.cache
@@ -82,14 +80,11 @@ C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFA
 C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\bin\Debug\System.Memory.xml
 C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\obj\Debug\ViewInfo\InformationWindow.g.cs
-C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\obj\Debug\ViewInfo\InformationWindow.baml
 C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\bin\Debug\MaterialDesignColors.dll
 C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\bin\Debug\MaterialDesignThemes.Wpf.dll
 C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\bin\Debug\MaterialDesignColors.pdb
 C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\bin\Debug\MaterialDesignThemes.Wpf.pdb
 C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\bin\Debug\MaterialDesignThemes.Wpf.xml
-C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\obj\Debug\ArduinoMonitoringWPFApp.csprojAssemblyReference.cache
 C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\bin\Debug\MaterialDesignThemes.MahApps.dll
 C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\bin\Debug\MaterialDesignThemes.MahApps.pdb
 C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.BoxIcons.dll
@@ -158,3 +153,163 @@ C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFA
 C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.WeatherIcons.xml
 C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.Zondicons.pdb
 C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.Zondicons.xml
+C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\bin\Debug\LiveCharts.dll
+C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\bin\Debug\LiveCharts.pdb
+C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\bin\Debug\LiveCharts.xml
+C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\bin\Debug\Caliburn.Micro.dll
+C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\bin\Debug\Caliburn.Micro.Platform.Core.dll
+C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\bin\Debug\Caliburn.Micro.Platform.dll
+C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\bin\Debug\Caliburn.Micro.xml
+C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\bin\Debug\Caliburn.Micro.Platform.xml
+C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\bin\Debug\Caliburn.Micro.Platform.Core.xml
+C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\obj\Debug\Views\MainView.g.cs
+C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\obj\Debug\Views\MainView.baml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\ArduinoMonitoringWPFApp.exe.config
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\ArduinoMonitoringWPFApp.exe
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\ArduinoMonitoringWPFApp.pdb
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\Caliburn.Micro.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\Caliburn.Micro.Platform.Core.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\Caliburn.Micro.Platform.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\ControlzEx.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\Google.Protobuf.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\InteractiveDataDisplay.WPF.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\LiveCharts.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.BoxIcons.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.Core.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.Entypo.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.EvaIcons.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.FeatherIcons.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.FontAwesome.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.Ionicons.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.JamIcons.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.Material.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.MaterialDesign.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.MaterialLight.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.Microns.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.Modern.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.Octicons.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.PicolIcons.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.RPGAwesome.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.SimpleIcons.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.Typicons.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.Unicons.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.WeatherIcons.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.Zondicons.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MaterialDesignColors.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MaterialDesignThemes.MahApps.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\Microsoft.Maps.MapControl.WPF.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MySql.Data.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\Renci.SshNet.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\System.Buffers.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\System.Memory.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\System.Reactive.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\Zstandard.Net.dll
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\Caliburn.Micro.xml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\Caliburn.Micro.Platform.xml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\Caliburn.Micro.Platform.Core.xml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\ControlzEx.pdb
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\ControlzEx.xml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\Google.Protobuf.xml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\InteractiveDataDisplay.WPF.pdb
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\LiveCharts.pdb
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\LiveCharts.xml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.pdb
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.xml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.pdb
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.xml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.BoxIcons.pdb
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.BoxIcons.xml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.Core.pdb
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.Core.xml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.Entypo.pdb
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.Entypo.xml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.EvaIcons.pdb
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.EvaIcons.xml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.FeatherIcons.pdb
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.FeatherIcons.xml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.FontAwesome.pdb
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.FontAwesome.xml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.Ionicons.pdb
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.Ionicons.xml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.JamIcons.pdb
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.JamIcons.xml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.Material.pdb
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.Material.xml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.MaterialDesign.pdb
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.MaterialDesign.xml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.MaterialLight.pdb
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.MaterialLight.xml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.Microns.pdb
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.Microns.xml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.Modern.pdb
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.Modern.xml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.Octicons.pdb
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.Octicons.xml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.PicolIcons.pdb
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.PicolIcons.xml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.RPGAwesome.pdb
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.RPGAwesome.xml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.SimpleIcons.pdb
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.SimpleIcons.xml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.Typicons.pdb
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.Typicons.xml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.Unicons.pdb
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.Unicons.xml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.WeatherIcons.pdb
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.WeatherIcons.xml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.Zondicons.pdb
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MahApps.Metro.IconPacks.Zondicons.xml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MaterialDesignColors.pdb
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MaterialDesignThemes.MahApps.pdb
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\Microsoft.Maps.MapControl.WPF.xml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\MySql.Data.xml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\Renci.SshNet.xml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\System.Buffers.xml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\System.Memory.xml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\System.Reactive.xml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\obj\Debug\Views\MainView.g.cs
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\obj\Debug\App.g.cs
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\obj\Debug\ArduinoMonitoringWPFApp_MarkupCompile.cache
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\obj\Debug\ArduinoMonitoringWPFApp_MarkupCompile.lref
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\obj\Debug\App.baml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\obj\Debug\Views\MainView.baml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\obj\Debug\ArduinoMonitoringWPFApp.g.resources
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\obj\Debug\ArduinoMonitoringWPFApp.Properties.Resources.resources
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\obj\Debug\ArduinoMonitoringWPFApp.csproj.GenerateResource.cache
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\obj\Debug\ArduinoMonitoringWPFApp.csproj.CoreCompileInputs.cache
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\obj\Debug\ArduinoMonitoringWPFApp.csproj.CopyComplete
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\obj\Debug\ArduinoMonitoringWPFApp.exe
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\obj\Debug\ArduinoMonitoringWPFApp.pdb
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\obj\Debug\Views\InfoView.g.cs
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\obj\Debug\Views\InfoView.baml
+C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\obj\Debug\ArduinoMonitoringWPFApp.csprojAssemblyReference.cache

@@ -1,0 +1,109 @@
+﻿<mah:MetroWindow x:Class="ArduinoMonitoringWPFApp.Views.MainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:ArduinoMonitoringWPFApp"
+        mc:Ignorable="d"
+        Title="Arduino Monitoring" Height="700" Width="600" 
+        >
+    <mah:MetroWindow.IconTemplate>
+        <DataTemplate>
+            <iconPacks:PackIconSimpleIcons Kind="Arduino" HorizontalAlignment="Center" VerticalAlignment="Center"
+                                           Foreground="White"/>
+        </DataTemplate>
+    </mah:MetroWindow.IconTemplate>
+    
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.8*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2.5*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="6*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+
+        <Menu Grid.Row="0" Grid.ColumnSpan="4" Margin="3">
+            <MenuItem Header="파일">
+                <MenuItem Header="열기" >
+                </MenuItem>
+                <MenuItem Header="저장">
+                </MenuItem>
+                <Separator/>
+                <MenuItem x:Name="ProgramExit" Header="끝내기" >
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="시뮬레이션">
+                <MenuItem x:Name="SimStart" Header="시작" >
+                </MenuItem>
+                <MenuItem x:Name="SimStop" Header="중지" >
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="도움말">
+                <MenuItem x:Name="Info" Header="정보"  >
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+        <TextBlock x:Name="ConnTime"  Margin="5" 
+                   Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
+                   FontSize="15" HorizontalAlignment="Left" 
+                   VerticalAlignment="Center" />
+
+        <TextBox x:Name="SensorCount" Grid.Row="1" Grid.Column="2" 
+                 Margin="2" Height="25" Width="50"
+                 HorizontalAlignment="Center" IsReadOnly="True" />
+
+        <GroupBox Grid.Row="2" Grid.ColumnSpan="3" Margin="5" >
+            <GroupBox.Header>
+                <TextBlock Text="포토 레지스터" Foreground="White" FontSize="15"/>
+            </GroupBox.Header>
+            <StackPanel>
+                <ProgressBar x:Name="PgbPhotoRegistor" Height="30" Margin="5" />
+                <TextBox x:Name="LblPhotoRegistor"  HorizontalAlignment="Center"/>
+            </StackPanel>
+        </GroupBox>
+        <TextBox x:Name="RtbLog" Grid.Row="3" Grid.ColumnSpan="3" Margin="5"
+                 Background="WhiteSmoke"  
+                 IsReadOnly="True" ScrollViewer.CanContentScroll="True"/>
+
+        <GroupBox Grid.Row="1" Grid.Column="4" Grid.RowSpan="3" 
+                  Margin="5" Style="{StaticResource MaterialDesignGroupBox}" >
+            <GroupBox.Header>
+                <TextBlock Text="포트" Foreground="White" FontSize="15"/>
+            </GroupBox.Header>
+            <Grid Margin="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+                <ComboBox x:Name="CboSerialPort" Grid.Row="0" Margin="5" 
+                          SelectedItem="{Binding SelectedPort}"  
+                          />
+
+                <Button x:Name="BtnConnect" Grid.Row="1" Margin="5" Content="CONNECT"
+                        FontSize="20"  Foreground="White"/>
+                <Button x:Name="BtnDisconnect" Grid.Row="2" Margin="5" Content="DISCONNECT"
+                        FontSize="20"  Foreground="White"/>
+                <Button x:Name="BtnPortValue" Grid.Row="3" Margin="5" Content="Port"
+                        FontSize="30" Height="90" Foreground="White"/>
+            </Grid>
+        </GroupBox>
+        <lvc:CartesianChart Grid.Row="5" Grid.ColumnSpan="4">
+            <lvc:CartesianChart.Series>
+                <lvc:LineSeries Values="{Binding vs}"/>
+            </lvc:CartesianChart.Series>
+        </lvc:CartesianChart>
+    </Grid>
+</mah:MetroWindow>

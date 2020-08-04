@@ -1,0 +1,28 @@
+LiveChart
+1. 파이차트
+ - 값만 입력하면 댐. (Line Chart는 리스트 입력)
+
+2. Caliburn
+ - Views,ViewModels,Models 폴더 생성.
+ - Bootstrapper 클래스 생성
+   1) BootstrapperBase 상속
+   2) Bootstrapper() 생성자 생성
+      Initialize();
+   3) override void OnStartup 오버라이드 생성
+      DisplayRootViewFor<MainViewModel>();
+ - App.xaml 
+	1) URI 삭제
+	2) <ResourceDictionary>
+               <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary>
+                    <local:Bootstrapper x:Key="bootstrapper"/>
+                </ResourceDictionary>
+               </ResourceDictionary.MergedDictionaries>
+              </ResourceDictionary>
+	
+ - (MainView)Model 생성 (Conductor<object> 상속)
+ - (MainView) 생성
+	1) x:Class="MvvmChartApp.Views.MainView" (.Views 추가)
+	2) MainView.xaml.cs 클래스 이름 바꾸기 ( ex) MainWindow.xaml => MainView.xaml)
+ 
+3. Mah
