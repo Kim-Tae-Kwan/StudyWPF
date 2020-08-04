@@ -6,6 +6,34 @@ using System.Windows;
 using ArduinoMonitoringWPFApp.Base;
 using System.Collections.Generic;
 using System.Windows.Media.Animation;
+using LiveCharts;
+using MySql.Data.MySqlClient;
+
+
+
+/*
+ 2. log Textbox
+ 3. 그래프 줌 버튼
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 namespace ArduinoMonitoringWPFApp.ViewModels
 {
@@ -14,10 +42,29 @@ namespace ArduinoMonitoringWPFApp.ViewModels
         #region 속성 영역
         readonly IWindowManager windowManager; //팝업창
 
+        string strConnString = "Data Source=localhost;Port=3306;Database=iot_sensordata;uid=root;password=mysql_p@ssw0rd";
+
+        string strQuery = "INSERT INTO sensordatatbl " +
+                    " (Date, Value) " +
+                    " VALUES " +
+                    " (@Date, @Value) ";
+
         public bool IsSimulation { get; set; }
         SerialPort serial;
         private short maxPhotoVal = 1023;
         List<SensorData> photoDatas = new List<SensorData>();
+
+        bool isConn;
+        public bool IsConn
+        {
+            get => isConn;
+            set
+            {
+                isConn = value;
+                NotifyOfPropertyChange(() => CanBtnConnect);
+                NotifyOfPropertyChange(() => CanBtnDisconnect);
+            }
+        }
 
         Timer timer { get; set; }
         Random rand = new Random();
@@ -68,8 +115,8 @@ namespace ArduinoMonitoringWPFApp.ViewModels
             }
         }
 
-        string rtbLog;
-        public string RtbLog
+        List<string> rtbLog;
+        public List<string> RtbLog
         {
             get => rtbLog;
             set
@@ -96,11 +143,25 @@ namespace ArduinoMonitoringWPFApp.ViewModels
             get => selectedPort;
             set
             {
+                
                 selectedPort = value;
                 NotifyOfPropertyChange(() => SelectedPort);
+                NotifyOfPropertyChange(() => CanBtnConnect);
             }
         }
 
+        ChartValues<double> lineValues;
+        public ChartValues<double> LineValues
+        {
+            get => lineValues;
+            set
+            {
+                lineValues = value;
+                NotifyOfPropertyChange(() => LineValues);
+            }
+        }
+
+        
         #endregion
 
         #region 생성자 영역
@@ -108,24 +169,27 @@ namespace ArduinoMonitoringWPFApp.ViewModels
         {
             InitComboBox();
             ConnTime = "연결시간 :";
+            LineValues = new ChartValues<double>();
+            RtbLog = new List<string>();
+            SelectedPort = "선택";
+            BtnPortValue = "PORT";
         }
 
         private void InitComboBox()
         {
             CboSerialPort = new BindableCollection<string>();
-            CboSerialPort.Add("선택");
             foreach (var item in SerialPort.GetPortNames())
             {
-                var temp = item;
-                CboSerialPort.Add(temp);
+                CboSerialPort.Add(item);
             }
         }
+        #endregion
 
         public void ProgramExit()
         {
             Environment.Exit(0);
         }
-        #endregion
+        
 
         private void DisplayValue(string sVal)
         {
@@ -142,12 +206,17 @@ namespace ArduinoMonitoringWPFApp.ViewModels
                 PgbPhotoRegistor = v;
                 LblPhotoRegistor = v.ToString();
                 string item = $"{photoDatas.Count} {DateTime.Now.ToString("yy-MM-dd hh:mm:ss")}\t{v}";
-                RtbLog=$"{item}\n";
+                RtbLog.Add($"{item}\n");
+
+                
+                LineValues.Add(v);
+
+
 
                 if (IsSimulation == false)
                 {
                     BtnPortValue = $"{serial.PortName}\n{sVal}";
-                    //InsertDataToDB(data);
+                    InsertDataToDB(data);
                 }
                 else
                     BtnPortValue = $"{sVal}";
@@ -156,8 +225,38 @@ namespace ArduinoMonitoringWPFApp.ViewModels
             }
             catch (Exception ex)
             {
-                //RtbLog.AppendText($"Error : {ex.Message}\n");
+                RtbLog.Add($"Error : {ex.Message}\n");
                 //RtbLog.ScrollToEnd();
+            }
+        }
+
+        private void InsertDataToDB(SensorData data)
+        {
+            using (MySqlConnection conn = new MySqlConnection(strConnString))
+            {
+                conn.Open();
+                MySqlCommand cmd = new MySqlCommand(strQuery, conn);
+                MySqlParameter paramDate = new MySqlParameter("@Date", MySqlDbType.DateTime)
+                {
+                    Value = data.Date
+                };
+                cmd.Parameters.Add(paramDate);
+                MySqlParameter paramValue = new MySqlParameter("@Value", MySqlDbType.Int32)
+                {
+                    Value = data.Value
+                };
+                cmd.Parameters.Add(paramValue);
+                cmd.ExecuteNonQuery();
+            }
+        } //DB 데이터 입력
+
+
+        public bool CanBtnConnect
+        {
+            get =>!((SelectedPort != "선택") && (IsConn==true));
+            set
+            {
+                NotifyOfPropertyChange(() => CanBtnDisconnect);
             }
         }
 
@@ -168,14 +267,14 @@ namespace ArduinoMonitoringWPFApp.ViewModels
                 MessageBox.Show("시뮬레이션을 중지하세요.");
                 return;
             }
-            else if (string.IsNullOrEmpty(SelectedPort))
+            else if (string.IsNullOrEmpty(SelectedPort) || SelectedPort == "선택")
             {
                 MessageBox.Show("포트를 선택하세요.");
                 return;
             }
-            else if (serial == null)
+            else 
             {
-
+                IsConn = true;
                 string portNum = SelectedPort;
                 serial = new SerialPort(portNum);
                 serial.DataReceived += Serial_DataReceived;
@@ -185,22 +284,25 @@ namespace ArduinoMonitoringWPFApp.ViewModels
                 //BtnConnect.IsEnabled = false;
                 //BtnDisconnect.IsEnabled = true;
             }
-            else
-                MessageBox.Show("이미 연결되었습니다.");
         }
 
         private void Serial_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
             string sVal = serial.ReadLine();
+            DisplayValue(sVal);
+        }
 
+        public bool CanBtnDisconnect
+        {
+            get=> !CanBtnConnect;
         }
 
         public void BtnDisconnect()
         {
             if (serial != null)
             {
+                IsConn = false;
                 serial.Close();
-
                 SelectedPort = CboSerialPort[0];
             }
             else

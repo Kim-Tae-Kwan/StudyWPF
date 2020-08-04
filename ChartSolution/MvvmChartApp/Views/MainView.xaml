@@ -20,7 +20,8 @@
         <Grid DockPanel.Dock="Top">
             <StackPanel>
                 <Menu IsMainMenu="True">
-                    <MenuItem Header="_Chart"><!-- _(언더바) 단축키 -->
+                    <MenuItem Header="_Chart">
+                        <!-- _(언더바) 단축키 -->
                         <MenuItem.Icon>
                             <iconPacks:PackIconTypicons Kind="ChartLine" />
                         </MenuItem.Icon>
@@ -47,15 +48,19 @@
                         </MenuItem>
                     </MenuItem>
                     <MenuItem Header="_LiveChart">
-                        
+
                     </MenuItem>
                 </Menu>
             </StackPanel>
         </Grid>
-        
+
         <Grid Background="WhiteSmoke">
-            <ContentControl x:Name="ActiveItem"/>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="16*"/>
+                <ColumnDefinition Width="75*"/>
+            </Grid.ColumnDefinitions>
+            <ContentControl x:Name="ActiveItem" Grid.ColumnSpan="2"/>
         </Grid>
-        
+
     </DockPanel>
 </mah:MetroWindow>

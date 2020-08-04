@@ -228,6 +228,7 @@
     </ApplicationDefinition>
     <Compile Include="before.cs" />
     <Compile Include="Bootstrapper.cs" />
+    <Compile Include="TextBoxBehavior.cs" />
     <Compile Include="ViewModels\InfoViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Page Include="Views\InfoView.xaml">

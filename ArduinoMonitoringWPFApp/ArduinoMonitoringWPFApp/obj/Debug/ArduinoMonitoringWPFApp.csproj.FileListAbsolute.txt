@@ -313,3 +313,6 @@ C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonito
 C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\obj\Debug\Views\InfoView.g.cs
 C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\obj\Debug\Views\InfoView.baml
 C:\Users\vodja\OneDrive\바탕 화면\ArduinoMonitoringWPFApp_MVVM\ArduinoMonitoringWPFApp\obj\Debug\ArduinoMonitoringWPFApp.csprojAssemblyReference.cache
+C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\obj\Debug\ArduinoMonitoringWPFApp.csprojAssemblyReference.cache
+C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\obj\Debug\Views\InfoView.g.cs
+C:\Users\PKNU\Desktop\IOT\StudyWPF\ArduinoMonitoringWPFApp\ArduinoMonitoringWPFApp\obj\Debug\Views\InfoView.baml
