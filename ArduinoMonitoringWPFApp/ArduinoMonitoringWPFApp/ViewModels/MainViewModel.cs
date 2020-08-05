@@ -8,31 +8,13 @@ using System.Collections.Generic;
 using System.Windows.Media.Animation;
 using LiveCharts;
 using MySql.Data.MySqlClient;
+using MvvmDialogs;
 
 
 
 /*
- 2. log Textbox
  3. 그래프 줌 버튼
  */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 namespace ArduinoMonitoringWPFApp.ViewModels
@@ -41,6 +23,7 @@ namespace ArduinoMonitoringWPFApp.ViewModels
     {
         #region 속성 영역
         readonly IWindowManager windowManager; //팝업창
+        readonly IDialogService dialogService;
 
         string strConnString = "Data Source=localhost;Port=3306;Database=iot_sensordata;uid=root;password=mysql_p@ssw0rd";
 
@@ -115,8 +98,8 @@ namespace ArduinoMonitoringWPFApp.ViewModels
             }
         }
 
-        List<string> rtbLog;
-        public List<string> RtbLog
+        string rtbLog;
+        public string RtbLog
         {
             get => rtbLog;
             set
@@ -165,12 +148,14 @@ namespace ArduinoMonitoringWPFApp.ViewModels
         #endregion
 
         #region 생성자 영역
-        public MainViewModel() //생성자
+
+        public MainViewModel(IWindowManager windowManager, IDialogService dialogService)
         {
+            this.windowManager = windowManager;
+            this.dialogService = dialogService;
             InitComboBox();
             ConnTime = "연결시간 :";
             LineValues = new ChartValues<double>();
-            RtbLog = new List<string>();
             SelectedPort = "선택";
             BtnPortValue = "PORT";
         }
@@ -206,7 +191,7 @@ namespace ArduinoMonitoringWPFApp.ViewModels
                 PgbPhotoRegistor = v;
                 LblPhotoRegistor = v.ToString();
                 string item = $"{photoDatas.Count} {DateTime.Now.ToString("yy-MM-dd hh:mm:ss")}\t{v}";
-                RtbLog.Add($"{item}\n");
+                RtbLog+=$"{item}\n";
 
                 
                 LineValues.Add(v);
@@ -225,8 +210,7 @@ namespace ArduinoMonitoringWPFApp.ViewModels
             }
             catch (Exception ex)
             {
-                RtbLog.Add($"Error : {ex.Message}\n");
-                //RtbLog.ScrollToEnd();
+                RtbLog+=($"Error : {ex.Message}\n");
             }
         }
 
@@ -330,8 +314,8 @@ namespace ArduinoMonitoringWPFApp.ViewModels
 
         public void Info()
         {
-            //InfoViewModel infoView = new InfoViewModel();
-            //bool? success = windowManager.ShowDialog(infoView);
+            InfoViewModel dialogVM = new InfoViewModel();
+            bool? success = windowManager.ShowDialog(dialogVM);
         }
     }
 }

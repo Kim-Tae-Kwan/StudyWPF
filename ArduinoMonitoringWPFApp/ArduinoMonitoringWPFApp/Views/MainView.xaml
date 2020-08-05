@@ -8,8 +8,9 @@
         xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:ArduinoMonitoringWPFApp"
+        xmlns:help="clr-namespace:ArduinoMonitoringWPFApp.Helpers"
         mc:Ignorable="d"
-        Title="Arduino Monitoring" Height="700" Width="600" 
+        Title="Arduino Monitoring" Height="800" Width="600" 
         >
     <mah:MetroWindow.IconTemplate>
         <DataTemplate>
@@ -25,6 +26,7 @@
             <RowDefinition Height="2.5*"/>
             <RowDefinition Height="3*"/>
             <RowDefinition Height="6*"/>
+            <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -104,7 +106,7 @@
         
         <TextBox x:Name="RtbLog" Grid.Row="3" Grid.ColumnSpan="3" Margin="5"
                  Background="WhiteSmoke"  
-                 IsReadOnly="True" />
+                 IsReadOnly="True" help:TextBoxBehaviors.AutoScrollToEnd="True"/>
 
         <GroupBox Grid.Row="1" Grid.Column="4" Grid.RowSpan="3" 
                   Margin="5" Style="{StaticResource MaterialDesignGroupBox}" >
@@ -130,11 +132,19 @@
                         FontSize="30" Height="90" Foreground="White"/>
             </Grid>
         </GroupBox>
-        <lvc:CartesianChart Grid.Row="5" Grid.ColumnSpan="4">
+        <lvc:CartesianChart Grid.Row="4" Grid.ColumnSpan="4" >
+            <lvc:CartesianChart.AxisX >
+                <lvc:Axis Title="Time(sec)" MaxValue="{Binding AxixXMax}"/>
+            </lvc:CartesianChart.AxisX>
+            <lvc:CartesianChart.AxisY>
+                <lvc:Axis Title="Photo Value" MinValue="0" MaxValue="1023"/>
+            </lvc:CartesianChart.AxisY>
             <lvc:CartesianChart.Series  >
-                <lvc:LineSeries Values="{Binding LineValues}" Fill="WhiteSmoke" Stroke="LightGreen" 
-                                StrokeThickness="3" Title="Photo Value"/>
+                <lvc:LineSeries Values = "{Binding LineValues}" Fill="WhiteSmoke" Stroke="LightGreen" 
+                                StrokeThickness="3" Title="Photo Value"  />
             </lvc:CartesianChart.Series>
         </lvc:CartesianChart>
+        
+        
     </Grid>
 </mah:MetroWindow>

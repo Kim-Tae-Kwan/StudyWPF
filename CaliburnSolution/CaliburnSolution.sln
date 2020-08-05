@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_MVVM_App", "..\WPF_MVVM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecondCalibrunApp", "..\SecondCalibrunApp\SecondCalibrunApp\SecondCalibrunApp.csproj", "{2E82F66D-40ED-4EB9-AB17-8484BF618905}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThirdCaliburnApp", "ThirdCaliburnApp\ThirdCaliburnApp.csproj", "{BEF7A55F-36BA-40D6-8BA7-8903C257A61F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThirdCaliburnApp", "..\..\..\THIRDC~1\ThirdCaliburnApp.csproj", "{A14A1D38-71E8-4649-9952-02135A8A5900}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{2E82F66D-40ED-4EB9-AB17-8484BF618905}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E82F66D-40ED-4EB9-AB17-8484BF618905}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E82F66D-40ED-4EB9-AB17-8484BF618905}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BEF7A55F-36BA-40D6-8BA7-8903C257A61F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BEF7A55F-36BA-40D6-8BA7-8903C257A61F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BEF7A55F-36BA-40D6-8BA7-8903C257A61F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BEF7A55F-36BA-40D6-8BA7-8903C257A61F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A14A1D38-71E8-4649-9952-02135A8A5900}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A14A1D38-71E8-4649-9952-02135A8A5900}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A14A1D38-71E8-4649-9952-02135A8A5900}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A14A1D38-71E8-4649-9952-02135A8A5900}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
