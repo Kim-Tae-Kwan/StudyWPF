@@ -5,7 +5,6 @@ using System.IO.Ports;
 using System.Windows;
 using ArduinoMonitoringWPFApp.Base;
 using System.Collections.Generic;
-using System.Windows.Media.Animation;
 using LiveCharts;
 using MySql.Data.MySqlClient;
 using MvvmDialogs;
@@ -32,10 +31,23 @@ namespace ArduinoMonitoringWPFApp.ViewModels
                     " VALUES " +
                     " (@Date, @Value) ";
 
-        public bool IsSimulation { get; set; }
+        bool isSimulation;
+        public bool IsSimulation 
+        {
+            get => isSimulation;
+            set 
+            {
+                isSimulation = value;
+                NotifyOfPropertyChange(() => CanAllValue);
+                NotifyOfPropertyChange(() => CanZoom);
+            }
+        }
         SerialPort serial;
         private short maxPhotoVal = 1023;
         List<SensorData> photoDatas = new List<SensorData>();
+        public double ValueCount { get; set; }
+        public bool IsZoom { get; set; }
+        public bool FirstZoomBtn { get; set; }
 
         bool isConn;
         public bool IsConn
@@ -46,6 +58,8 @@ namespace ArduinoMonitoringWPFApp.ViewModels
                 isConn = value;
                 NotifyOfPropertyChange(() => CanBtnConnect);
                 NotifyOfPropertyChange(() => CanBtnDisconnect);
+                NotifyOfPropertyChange(() => CanZoom);
+                NotifyOfPropertyChange(() => CanAllValue);
             }
         }
 
@@ -84,6 +98,17 @@ namespace ArduinoMonitoringWPFApp.ViewModels
             {
                 pgbPhotoRegistor = value;
                 NotifyOfPropertyChange(() => PgbPhotoRegistor);
+            }
+        }
+
+        bool cboEnable;
+        public bool CboEnable
+        {
+            get => cboEnable;
+            set
+            {
+                cboEnable = value;
+                NotifyOfPropertyChange(() => CboEnable);
             }
         }
 
@@ -144,7 +169,27 @@ namespace ArduinoMonitoringWPFApp.ViewModels
             }
         }
 
-        
+        double axisXMax;
+        public double AxisXMax
+        {
+            get => axisXMax;
+            set
+            {
+                axisXMax = value;
+                NotifyOfPropertyChange(() => AxisXMax);
+            }
+        }
+
+        double axisXMin;
+        public double AxisXMin
+        {
+            get => axisXMin;
+            set
+            {
+                axisXMin = value;
+                NotifyOfPropertyChange(() => AxisXMin);
+            }
+        }
         #endregion
 
         #region 생성자 영역
@@ -158,6 +203,11 @@ namespace ArduinoMonitoringWPFApp.ViewModels
             LineValues = new ChartValues<double>();
             SelectedPort = "선택";
             BtnPortValue = "PORT";
+            AxisXMin = 0;
+            AxisXMax = 1;
+            IsZoom = false;
+            FirstZoomBtn = true;
+            CboEnable = true;
         }
 
         private void InitComboBox()
@@ -193,15 +243,17 @@ namespace ArduinoMonitoringWPFApp.ViewModels
                 string item = $"{photoDatas.Count} {DateTime.Now.ToString("yy-MM-dd hh:mm:ss")}\t{v}";
                 RtbLog+=$"{item}\n";
 
-                
+
+                if(IsZoom==false)
+                    AxisXMax = photoDatas.Count;
                 LineValues.Add(v);
 
 
 
-                if (IsSimulation == false)
+                if (IsSimulation == false )
                 {
-                    BtnPortValue = $"{serial.PortName}\n{sVal}";
-                    InsertDataToDB(data);
+                        BtnPortValue = $"{serial.PortName}\n{sVal}";
+                        InsertDataToDB(data);
                 }
                 else
                     BtnPortValue = $"{sVal}";
@@ -241,6 +293,8 @@ namespace ArduinoMonitoringWPFApp.ViewModels
             set
             {
                 NotifyOfPropertyChange(() => CanBtnDisconnect);
+                NotifyOfPropertyChange(() => CanZoom);
+                NotifyOfPropertyChange(() => CanAllValue);
             }
         }
 
@@ -259,14 +313,13 @@ namespace ArduinoMonitoringWPFApp.ViewModels
             else 
             {
                 IsConn = true;
+                CboEnable = false;
                 string portNum = SelectedPort;
                 serial = new SerialPort(portNum);
                 serial.DataReceived += Serial_DataReceived;
                 serial.Open();
 
                 ConnTime = $"연결시간 : {DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss")}";
-                //BtnConnect.IsEnabled = false;
-                //BtnDisconnect.IsEnabled = true;
             }
         }
 
@@ -287,6 +340,7 @@ namespace ArduinoMonitoringWPFApp.ViewModels
             {
                 IsConn = false;
                 serial.Close();
+                CboEnable = true;
                 SelectedPort = CboSerialPort[0];
             }
             else
@@ -308,14 +362,53 @@ namespace ArduinoMonitoringWPFApp.ViewModels
 
         public void SimStop()
         {
-            timer.Dispose();
-            IsSimulation = false;
+            if(IsSimulation==true)
+            {
+                timer.Dispose();
+                IsSimulation = false;
+            }
         }
 
         public void Info()
         {
             InfoViewModel dialogVM = new InfoViewModel();
             bool? success = windowManager.ShowDialog(dialogVM);
+        }
+
+        public bool CanZoom
+        {
+            get => (!CanBtnConnect) || IsSimulation;
+        }
+
+        public void Zoom()
+        {
+
+            if (FirstZoomBtn)
+            {
+                ValueCount = photoDatas.Count;
+                FirstZoomBtn = false;
+            }
+                
+            if((AxisXMin+5) <= AxisXMax)
+            {
+
+                AxisXMin +=2;
+                AxisXMax = ValueCount - 2;
+                ValueCount -=2;
+                IsZoom = true;
+            }
+        }
+
+        public bool CanAllValue
+        {
+            get => (!CanBtnConnect)|| IsSimulation;
+        }
+        public void AllValue()
+        {
+            IsZoom = false;
+            AxisXMin = 0;
+            AxisXMax = photoDatas.Count;
+            FirstZoomBtn = true;
         }
     }
 }

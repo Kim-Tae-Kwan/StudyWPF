@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:ArduinoMonitoringWPFApp.Views"
              xmlns:help="clr-namespace:ArduinoMonitoringWPFApp.Helpers"
              mc:Ignorable="d" 
-             Height="450" Width="800"
+             Height="500" Width="800"
              Background="WhiteSmoke" 
              >
     <Grid>
@@ -15,7 +15,7 @@
             <RowDefinition Height="2*"/>
             <RowDefinition Height="2*"/>
             <RowDefinition Height="2*"/>
-            <RowDefinition Height="3*"/>
+            <RowDefinition Height="2*"/>
             <RowDefinition Height="1.5*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -27,30 +27,46 @@
         <Image Grid.Row="0" Grid.Column="0" Grid.RowSpan="6" Margin="20" 
                Source="/ViewInfo/images.png" Stretch="Fill" />
 
-        <GroupBox Header="제품명" Grid.Row="0" Grid.Column="1" Margin="5">
+        <GroupBox  Grid.Row="0" Grid.Column="1" Margin="5" >
+            <GroupBox.Header>
+                <TextBlock Text="제품명" Foreground="White" FontSize="15"   />
+            </GroupBox.Header>
             <TextBlock x:Name="ProductName"/>
         </GroupBox>
 
-        <GroupBox Header="버전" Grid.Row="1" Grid.Column="1" Margin="5">
+        <GroupBox  Grid.Row="1" Grid.Column="1" Margin="5" >
+            <GroupBox.Header>
+                <TextBlock Text="버전" Foreground="White" FontSize="15"   />
+            </GroupBox.Header>
             <TextBlock x:Name="Version"/>
         </GroupBox>
 
-        <GroupBox Header="제품명" Grid.Row="2" Grid.Column="1" Margin="5">
+        <GroupBox  Grid.Row="2" Grid.Column="1" Margin="5">
+            <GroupBox.Header>
+                <TextBlock Text="버전" Foreground="White" FontSize="15"   />
+            </GroupBox.Header>
             <TextBlock x:Name="Copyright"/>
         </GroupBox>
 
-        <GroupBox Header="회사명" Grid.Row="3" Grid.Column="1" Margin="5">
+        <GroupBox  Grid.Row="3" Grid.Column="1" Margin="5">
+            <GroupBox.Header>
+                <TextBlock Text="회사명" Foreground="White" FontSize="15"   />
+            </GroupBox.Header>
             <TextBlock x:Name="CompanyName"/>
         </GroupBox>
 
-       
-        <TextBox x:Name="Description"
-                 Grid.Row="4" Grid.Column="1" Margin="5"
-                 help:TextBoxBehaviors.AutoScrollToEnd="True" TextWrapping="Wrap" 
-                 AcceptsReturn="True" IsReadOnly="True"
-                 />
+        <GroupBox  Grid.Row="4" Grid.RowSpan="2" Grid.Column="1" Margin="5">
+            <GroupBox.Header>
+                <TextBlock Text="설명" Foreground="White" FontSize="15"   />
+            </GroupBox.Header>
+            <TextBox x:Name="Description"
+                     help:TextBoxBehaviors.AutoScrollToEnd="True" TextWrapping="Wrap" 
+                     AcceptsReturn="True" IsReadOnly="True"
+                     />
+        </GroupBox>
+
         
         <Button Grid.Row="5" Grid.Column="2" Margin="10"
-                Content="확인(O)" FontSize="10" IsCancel="True"/>
+                Content="확인(O)" FontSize="10" IsCancel="True" Foreground="White"/>
     </Grid>
 </UserControl>

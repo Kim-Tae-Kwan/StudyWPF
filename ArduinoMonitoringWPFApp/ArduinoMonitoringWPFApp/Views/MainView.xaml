@@ -121,7 +121,7 @@
                     <RowDefinition Height="2*"/>
                 </Grid.RowDefinitions>
                 <ComboBox x:Name="CboSerialPort" Grid.Row="0" Margin="5" 
-                          SelectedItem="{Binding SelectedPort}"  
+                          SelectedItem="{Binding SelectedPort}" IsEnabled="{Binding CboEnable}"  
                           />
 
                 <Button x:Name="BtnConnect" Grid.Row="1" Margin="5" Content="CONNECT"
@@ -132,19 +132,30 @@
                         FontSize="30" Height="90" Foreground="White"/>
             </Grid>
         </GroupBox>
-        <lvc:CartesianChart Grid.Row="4" Grid.ColumnSpan="4" >
+        <lvc:CartesianChart Grid.Row="4" Grid.ColumnSpan="4"  >
             <lvc:CartesianChart.AxisX >
-                <lvc:Axis Title="Time(sec)" MaxValue="{Binding AxixXMax}"/>
+                <lvc:Axis Title="Time(sec)" MaxValue="{Binding AxisXMax}" MinValue="{Binding AxisXMin}" />
             </lvc:CartesianChart.AxisX>
+            
             <lvc:CartesianChart.AxisY>
                 <lvc:Axis Title="Photo Value" MinValue="0" MaxValue="1023"/>
             </lvc:CartesianChart.AxisY>
-            <lvc:CartesianChart.Series  >
+            
+            <lvc:CartesianChart.Series>
                 <lvc:LineSeries Values = "{Binding LineValues}" Fill="WhiteSmoke" Stroke="LightGreen" 
-                                StrokeThickness="3" Title="Photo Value"  />
+                                StrokeThickness="3" Title="Photo Value" />
             </lvc:CartesianChart.Series>
         </lvc:CartesianChart>
-        
-        
+        <Grid Grid.Row="5" Grid.ColumnSpan="4" Margin="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="AllValue" Grid.Column="0" Margin="10" Height="60"
+                    Content="ALL VALUE" Foreground="White" FontSize="20"/>
+            <Button x:Name="Zoom" Grid.Column="1" Margin="10" Height="60"
+                    Content="ZOOM" Foreground="White" FontSize="20"/>
+        </Grid>
+
     </Grid>
 </mah:MetroWindow>
