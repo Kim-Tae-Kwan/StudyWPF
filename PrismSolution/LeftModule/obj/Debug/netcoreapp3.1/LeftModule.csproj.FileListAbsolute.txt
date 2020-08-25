@@ -1,0 +1,16 @@
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\LeftModule\obj\Debug\netcoreapp3.1\LeftModule.csprojAssemblyReference.cache
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\LeftModule\obj\Debug\netcoreapp3.1\LeftModule_MarkupCompile.cache
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\LeftModule\bin\Debug\netcoreapp3.1\LeftModule.deps.json
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\LeftModule\bin\Debug\netcoreapp3.1\LeftModule.dll
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\LeftModule\bin\Debug\netcoreapp3.1\LeftModule.pdb
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\LeftModule\obj\Debug\netcoreapp3.1\Views\MessageView.baml
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\LeftModule\obj\Debug\netcoreapp3.1\Views\MessageView.g.cs
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\LeftModule\obj\Debug\netcoreapp3.1\LeftModule.g.resources
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\LeftModule\obj\Debug\netcoreapp3.1\LeftModule.AssemblyInfoInputs.cache
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\LeftModule\obj\Debug\netcoreapp3.1\LeftModule.AssemblyInfo.cs
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\LeftModule\obj\Debug\netcoreapp3.1\LeftModule.csproj.CoreCompileInputs.cache
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\LeftModule\obj\Debug\netcoreapp3.1\LeftModule.dll
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\LeftModule\obj\Debug\netcoreapp3.1\LeftModule.pdb
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\LeftModule\bin\Debug\netcoreapp3.1\PrismApp.Core.dll
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\LeftModule\bin\Debug\netcoreapp3.1\PrismApp.Core.pdb
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\LeftModule\obj\Debug\netcoreapp3.1\LeftModule.csproj.CopyComplete

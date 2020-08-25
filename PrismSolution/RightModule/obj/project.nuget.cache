@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "kRpIIr8PjVQ78BbIFYLCbExVxZ6JzVZ+JY71Ewm0E2OvRzZZajW3s+ENooMIFhtudnEd6UowMpThTubS7wpTAg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\PKNU\\Desktop\\IOT\\StudyWPF\\PrismSolution\\RightModule\\RightModule.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\PKNU\\.nuget\\packages\\commonservicelocator\\2.0.4\\commonservicelocator.2.0.4.nupkg.sha512",
+    "C:\\Users\\PKNU\\.nuget\\packages\\prism.core\\7.2.0.1422\\prism.core.7.2.0.1422.nupkg.sha512",
+    "C:\\Users\\PKNU\\.nuget\\packages\\prism.wpf\\7.2.0.1422\\prism.wpf.7.2.0.1422.nupkg.sha512"
+  ],
+  "logs": []
+}

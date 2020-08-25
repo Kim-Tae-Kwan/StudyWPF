@@ -1,0 +1,16 @@
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\RightModule\obj\Debug\netcoreapp3.1\RightModule.csprojAssemblyReference.cache
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\RightModule\obj\Debug\netcoreapp3.1\RightModule_MarkupCompile.cache
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\RightModule\obj\Debug\netcoreapp3.1\Views\MessageListView.baml
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\RightModule\obj\Debug\netcoreapp3.1\Views\MessageListView.g.cs
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\RightModule\obj\Debug\netcoreapp3.1\RightModule.g.resources
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\RightModule\obj\Debug\netcoreapp3.1\RightModule.AssemblyInfoInputs.cache
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\RightModule\obj\Debug\netcoreapp3.1\RightModule.AssemblyInfo.cs
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\RightModule\obj\Debug\netcoreapp3.1\RightModule.csproj.CoreCompileInputs.cache
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\RightModule\bin\Debug\netcoreapp3.1\RightModule.deps.json
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\RightModule\bin\Debug\netcoreapp3.1\RightModule.dll
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\RightModule\bin\Debug\netcoreapp3.1\RightModule.pdb
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\RightModule\bin\Debug\netcoreapp3.1\PrismApp.Core.dll
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\RightModule\bin\Debug\netcoreapp3.1\PrismApp.Core.pdb
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\RightModule\obj\Debug\netcoreapp3.1\RightModule.csproj.CopyComplete
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\RightModule\obj\Debug\netcoreapp3.1\RightModule.dll
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\RightModule\obj\Debug\netcoreapp3.1\RightModule.pdb

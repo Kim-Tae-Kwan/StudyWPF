@@ -1,0 +1,9 @@
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\PrismApp.Core\bin\Debug\netstandard2.0\PrismApp.Core.deps.json
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\PrismApp.Core\bin\Debug\netstandard2.0\PrismApp.Core.dll
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\PrismApp.Core\obj\Debug\netstandard2.0\PrismApp.Core.csprojAssemblyReference.cache
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\PrismApp.Core\obj\Debug\netstandard2.0\PrismApp.Core.AssemblyInfoInputs.cache
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\PrismApp.Core\obj\Debug\netstandard2.0\PrismApp.Core.AssemblyInfo.cs
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\PrismApp.Core\bin\Debug\netstandard2.0\PrismApp.Core.pdb
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\PrismApp.Core\obj\Debug\netstandard2.0\PrismApp.Core.csproj.CoreCompileInputs.cache
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\PrismApp.Core\obj\Debug\netstandard2.0\PrismApp.Core.dll
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\PrismApp.Core\obj\Debug\netstandard2.0\PrismApp.Core.pdb

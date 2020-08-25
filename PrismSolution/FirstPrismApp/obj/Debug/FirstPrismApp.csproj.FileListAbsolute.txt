@@ -1,0 +1,4 @@
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\FirstPrismApp\obj\Debug\Views\MainView.g.cs
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\FirstPrismApp\obj\Debug\App.g.cs
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\FirstPrismApp\obj\Debug\FirstPrismApp_MarkupCompile.cache
+C:\Users\PKNU\Desktop\IOT\StudyWPF\PrismSolution\FirstPrismApp\obj\Debug\FirstPrismApp_MarkupCompile.lref

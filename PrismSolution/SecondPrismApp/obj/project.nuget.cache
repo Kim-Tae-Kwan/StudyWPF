@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "8ssmHU/ZXZWRbQXmrPix5EtplKLRgRMY9cQyvIqgl8Ck8afGfgqqtstJtNbeVJSArT0URus0LYoOtyrWsA00zg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\PKNU\\Desktop\\IOT\\StudyWPF\\PrismSolution\\SecondPrismApp\\SecondPrismApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\PKNU\\.nuget\\packages\\commonservicelocator\\2.0.4\\commonservicelocator.2.0.4.nupkg.sha512",
+    "C:\\Users\\PKNU\\.nuget\\packages\\prism.core\\7.2.0.1422\\prism.core.7.2.0.1422.nupkg.sha512",
+    "C:\\Users\\PKNU\\.nuget\\packages\\prism.unity\\7.2.0.1422\\prism.unity.7.2.0.1422.nupkg.sha512",
+    "C:\\Users\\PKNU\\.nuget\\packages\\prism.wpf\\7.2.0.1422\\prism.wpf.7.2.0.1422.nupkg.sha512",
+    "C:\\Users\\PKNU\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\PKNU\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.2\\system.threading.tasks.extensions.4.5.2.nupkg.sha512",
+    "C:\\Users\\PKNU\\.nuget\\packages\\unity.abstractions\\5.11.1\\unity.abstractions.5.11.1.nupkg.sha512",
+    "C:\\Users\\PKNU\\.nuget\\packages\\unity.container\\5.11.1\\unity.container.5.11.1.nupkg.sha512"
+  ],
+  "logs": []
+}
